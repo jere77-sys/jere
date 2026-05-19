@@ -791,3 +791,307 @@ footer span {
 .toast.show {
   transform: translateX(-50%) translateY(0);
 }
+
+/* ══════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ══════════════════════════════════════════ */
+
+/* ── TABLET (max-width: 768px) ── */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 1rem;
+    height: 56px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .nav-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+
+  .hero {
+    padding: 3.5rem 1.5rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+  }
+
+  .stat-num {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-h2 {
+    font-size: 24px;
+  }
+
+  .out-actions {
+    flex-wrap: wrap;
+  }
+
+  .out-btn {
+    flex: 1 1 calc(50% - 4px);
+  }
+
+  .hist-item {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hist-text,
+  .hist-result {
+    flex: 1 1 100%;
+  }
+}
+
+/* ── MOBILE (max-width: 480px) ── */
+@media (max-width: 480px) {
+  nav {
+    padding: 0 0.75rem;
+    height: 50px;
+  }
+
+  .nav-logo {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  .nav-badge {
+    display: none;
+  }
+
+  .hero {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .hero-tag {
+    font-size: 9px;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+  }
+
+  .stat-num {
+    font-size: 20px;
+  }
+
+  .stat-lbl {
+    font-size: 9px;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .section-h2 {
+    font-size: 20px;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Cipher Tool */
+  .mode-btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .key-top {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .key-name {
+    font-size: 11px;
+  }
+
+  .key-display {
+    font-size: 26px;
+  }
+
+  .key-presets {
+    gap: 4px;
+  }
+
+  .preset {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  textarea,
+  .output-area {
+    min-height: 100px;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .run-btn {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .out-actions {
+    gap: 6px;
+  }
+
+  .out-btn {
+    font-size: 10px;
+    padding: 7px 4px;
+    gap: 4px;
+  }
+
+  .out-btn svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .info-strip {
+    gap: 6px;
+  }
+
+  .info-pill {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  /* Steps */
+  .step {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .step-num {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .step-body h3 {
+    font-size: 14px;
+  }
+
+  .step-body p {
+    font-size: 12px;
+  }
+
+  /* Visual demo */
+  .visual-demo {
+    padding: 1rem;
+  }
+
+  .demo-label {
+    width: 50px;
+    font-size: 10px;
+  }
+
+  .demo-char {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  /* History */
+  .hist-item {
+    padding: 10px 12px;
+    font-size: 11px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .hist-item > span {
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .hist-arrow {
+    display: none;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 10px;
+    padding: 1.5rem 1rem;
+  }
+
+  /* Toast */
+  .toast {
+    font-size: 12px;
+    padding: 8px 16px;
+    bottom: 1rem;
+  }
+}
+
+/* ── VERY SMALL SCREENS (max-width: 360px) ── */
+@media (max-width: 360px) {
+  .nav-links a {
+    font-size: 9px;
+    padding: 3px 4px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .out-btn {
+    flex: 1 1 100%;
+  }
+
+  .mode-btn {
+    font-size: 11px;
+    padding: 8px;
+    gap: 4px;
+  }
+
+  .mode-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+}
